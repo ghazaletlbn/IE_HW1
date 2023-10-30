@@ -1,0 +1,82 @@
+@import './variables';
+
+.explanation-sec {
+    width: 100%;
+    height: auto;
+    background: $white-color2;
+    display: flex;
+    flex-wrap: wrap;
+
+    .colored-section {
+        width: 100%;
+        max-width: 100%;
+        height: 763px;
+        background: linear-gradient(90deg, $white-color2 52%, $blue-color1 48%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        @media (max-width: $mobile-breakpoint) {
+            height: 350px;
+        }
+
+        .content {
+            max-width: 1199px;
+            width: 63%;
+            height: 67%;
+            border: 4px solid $white-color2;
+            border-radius: 40px;
+            display: flex;
+            flex-direction: row;
+            background: linear-gradient(0deg, $blue-color1, $blue-color1), linear-gradient(0deg, $white-color2, $white-color2);
+
+            img {
+                width: 47%; // 48% of the content's width
+                height: 100%;
+                border-radius: 0px 40px 40px 0px;
+            }
+        }
+
+        .explain-container {
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+            font-family: $font-family;
+            color: $white-color1;
+            justify-content: space-between;
+            height: 80%;
+            margin-left: 5%;
+            margin-top: 3%;
+
+            h2 {
+                font-size: 48px;
+                font-weight: 700;
+                line-height: 100%;
+                letter-spacing: 0;
+                text-align: left;
+                margin: 0;
+                @media (max-width: $mobile-breakpoint) {
+                    font-size: 20px;
+                }
+            }
+
+            p {
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 100%;
+                letter-spacing: 0;
+                text-align: left;
+                color: #19435A;
+                margin: 0;
+                @media (max-width: $mobile-breakpoint) {
+                    font-size: 6px;
+                }
+            }
+
+            img {
+                width: 100%;
+                height: 5%;
+            }
+        }
+    }
+}
